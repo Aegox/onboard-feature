@@ -139,7 +139,7 @@ export default function Formulario({ companyName }: FormularioProps) {
                     <CardFooter className="flex justify-center">
                         <Button
                             type="submit"
-                            variant="primary"
+                            variant="default"
                             className="bg-chart-1 hover:brightness-90 text-white font-semibold rounded-lg h-[35px] w-[160px] min-w-[160px] min-h-[35px] transition-all duration-500 ease-in-out text-[1rem]"
                         >
                             Enviar
