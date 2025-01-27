@@ -19,7 +19,7 @@ export default function InputSection({
 
   const handleSend = () => {
     if (!companyName.trim()) {
-      setError("El nombre de la empresa es obligatorio"); // Mostrar error si el campo está vacío
+      setError("El nombre es obligatorio"); // Mostrar error si el campo está vacío
       return;
     }
     setError(""); // Limpiar el error si el campo es válido
@@ -28,12 +28,12 @@ export default function InputSection({
 
   return (
     <section
-      className={`flex justify-between min-h-[75px] h-[75px] border-2 border-border rounded-2xl pl-[10px] mb-[20px] transition-all duration-300 ${
+        className={`flex justify-between min-h-[75px] h-[75px] border-2 border-border rounded-2xl pl-[10px] mb-[20px] transition-all duration-300 ${
         inputVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-[-20px]"
       }`}
     >
-      <div className="w-full flex items-center justify-between">
-        <div className="flex flex-col transition-all duration-300">
+        <div className="w-full flex items-center justify-between">
+          <div className="flex flex-col transition-all duration-300">
           <label className="text-slate-600 text-[0.8rem]">Muchas gracias, somos...</label>
           {buttonClicked ? (
             <span className="bg-transparent w-full text-foreground border-0">
